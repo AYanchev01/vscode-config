@@ -27,6 +27,9 @@
   // configs for vim extension
   "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-b>": false,
+  },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
