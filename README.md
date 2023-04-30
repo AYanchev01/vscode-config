@@ -1,2 +1,2 @@
 # vscode-configs
-Configurations for VS Code in ~/.config/Code/User/
+Vim extension focused configs for VS Code
