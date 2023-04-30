@@ -1,0 +1,233 @@
+{
+  "code-runner.runInTerminal": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cmake.configureOnOpen": true,
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.inlineSuggest.enabled": true,
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "remote.SSH.remotePlatform": {
+    "fmipython-pythonassignm-k3u8osb6vzz.ssh.ws-eu80.gitpod.io": "linux",
+    "fmipython-pythonassignm-5clkgrckpmt.ssh.ws-eu80.gitpod.io": "linux",
+    "fmipython-pythonassignm-xh7yaxfdczt.ssh.ws-eu82.gitpod.io": "linux",
+    "fmipython-pythonassignm-gdobq8ah9k8.ssh.ws-eu83.gitpod.io": "linux",
+    "fmipython-pythonassignm-gdobq8ah9k8.ssh.ws-eu84.gitpod.io": "linux"
+  },
+  "redhat.telemetry.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.tokenColorCustomizations": {
+    "comments": "#ffffff4d",
+  },
+  
+  // configs for vim extension
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-f>": false,
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "ctrl+d"
+      ],
+      "after": [
+        "ctrl+d",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "ctrl+u"
+      ],
+      "after": [
+        "ctrl+u",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "w"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "editor.action.goToDeclaration"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "R"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "z",
+        "c"
+      ],
+      "commands": [
+        "editor.fold"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "z",
+        "o"
+      ],
+      "commands": [
+        "editor.unfold"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "commands": [
+        "cursorDown"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "commands": [
+        "cursorUp"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }    
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ]
+    },
+  ],
+  "vim.useSystemClipboard": true,
+
+}
