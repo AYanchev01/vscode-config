@@ -10,13 +10,6 @@
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
   ],
-  "remote.SSH.remotePlatform": {
-    "fmipython-pythonassignm-k3u8osb6vzz.ssh.ws-eu80.gitpod.io": "linux",
-    "fmipython-pythonassignm-5clkgrckpmt.ssh.ws-eu80.gitpod.io": "linux",
-    "fmipython-pythonassignm-xh7yaxfdczt.ssh.ws-eu82.gitpod.io": "linux",
-    "fmipython-pythonassignm-gdobq8ah9k8.ssh.ws-eu83.gitpod.io": "linux",
-    "fmipython-pythonassignm-gdobq8ah9k8.ssh.ws-eu84.gitpod.io": "linux"
-  },
   "redhat.telemetry.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "[python]": {
@@ -26,6 +19,10 @@
   "editor.tokenColorCustomizations": {
     "comments": "#ffffff4d",
   },
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "bold",
+  "editor.fontLigatures": true,
   
   // configs for vim extension
   "editor.lineNumbers": "relative",
@@ -229,5 +226,4 @@
     },
   ],
   "vim.useSystemClipboard": true,
-
 }
