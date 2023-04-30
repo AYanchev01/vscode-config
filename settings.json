@@ -21,7 +21,7 @@
   },
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 14,
-  "editor.fontWeight": "bold",
+  "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
   
   // configs for vim extension
