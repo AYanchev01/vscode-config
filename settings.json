@@ -2,7 +2,6 @@
   "code-runner.runInTerminal": true,
   "security.workspace.trust.untrustedFiles": "open",
   "cmake.configureOnOpen": true,
-  "workbench.iconTheme": "Monokai Pro Icons",
   "editor.bracketPairColorization.enabled": false,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "terminal.integrated.enableMultiLinePasteWarning": false,
