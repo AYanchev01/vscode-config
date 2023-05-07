@@ -23,13 +23,34 @@
   "editor.fontSize": 14,
   "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
-  
   // configs for vim extension
   "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-b>": false,
   },
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "z"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "w"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -209,9 +230,14 @@
       ]
     },
     {
-      "before": ["<leader>", "s"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    }    
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    }
   ],
   "vim.normalModeKeyBindings": [
     {
