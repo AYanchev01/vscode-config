@@ -28,6 +28,24 @@
   "vim.handleKeys": {
     "<C-b>": false,
   },
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -470,6 +488,22 @@
       ],
       "commands": [
         "workbench.action.files.save",
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
       ]
     },
   ],
