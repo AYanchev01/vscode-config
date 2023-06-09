@@ -23,10 +23,11 @@
   "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
   // configs for vim extension
-  "editor.lineNumbers": "relative",
+  // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-b>": false,
+    "<C-f>": false,
   },
   "vim.visualModeKeyBindings": [
     {
@@ -97,26 +98,26 @@
         "actions.find"
       ]
     },
-    {
-      "before": [
-        "ctrl+d"
-      ],
-      "after": [
-        "ctrl+d",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "ctrl+u"
-      ],
-      "after": [
-        "ctrl+u",
-        "z",
-        "z"
-      ]
-    },
+    // {
+    //   "before": [
+    //     "ctrl+d"
+    //   ],
+    //   "after": [
+    //     "ctrl+d",
+    //     "z",
+    //     "z"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "ctrl+u"
+    //   ],
+    //   "after": [
+    //     "ctrl+u",
+    //     "z",
+    //     "z"
+    //   ]
+    // },
     {
       "before": [
         "<leader>",
@@ -293,26 +294,26 @@
         "X"
       ]
     },
-    {
-      "before": [
-        "ctrl+d"
-      ],
-      "after": [
-        "ctrl+d",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "ctrl+u"
-      ],
-      "after": [
-        "ctrl+u",
-        "z",
-        "z"
-      ]
-    },
+    // {
+    //   "before": [
+    //     "ctrl+d"
+    //   ],
+    //   "after": [
+    //     "ctrl+d",
+    //     "z",
+    //     "z"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "ctrl+u"
+    //   ],
+    //   "after": [
+    //     "ctrl+u",
+    //     "z",
+    //     "z"
+    //   ]
+    // },
     {
       "before": [
         "<leader>",
@@ -508,5 +509,8 @@
     },
   ],
   "vim.useSystemClipboard": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "C_Cpp.configurationWarnings": "disabled",
+  "workbench.colorTheme": "Default Dark+",
   "window.zoomLevel": 1,
 }
