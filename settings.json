@@ -16,7 +16,18 @@
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.tokenColorCustomizations": {
+
     "comments": "#ffffff4d",
+    "textMateRules": [
+        {
+            "scope": [
+                "variable.parameter"
+            ],
+            "settings": {
+                "foreground": "#ffc5fc"
+            }
+        },
+    ],
   },
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 14,
@@ -511,6 +522,5 @@
   "vim.useSystemClipboard": true,
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
-  "workbench.colorTheme": "Default Dark+",
-  "window.zoomLevel": 1,
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
 }
