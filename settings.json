@@ -260,6 +260,14 @@
       "commands": [
         "workbench.action.toggleSidebarVisibility"
       ]
+    },
+    {
+        "before": ["H"],
+        "after": ["^"]
+    },
+    {
+        "before": ["L"],
+        "after": ["$"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -490,6 +498,14 @@
       "commands": [
         "workbench.action.toggleSidebarVisibility"
       ]
+    },
+    {
+        "before": ["H"],
+        "after": ["^"]
+    },
+    {
+        "before": ["L"],
+        "after": ["$"]
     }
   ],
   "vim.normalModeKeyBindings": [
