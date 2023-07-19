@@ -29,10 +29,10 @@
         },
     ],
   },
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
-  "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
+  "editor.fontWeight": 550, 
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
@@ -268,6 +268,22 @@
     {
         "before": ["L"],
         "after": ["$"]
+    },
+    {
+        "before": ["<C-h>"],
+        "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+        "before": ["<C-l>"],
+        "commands": ["workbench.action.navigateRight"]
+    },
+    {
+        "before": ["<C-j>"],
+        "commands": ["workbench.action.navigateDown"]
+    },
+    {
+        "before": ["<C-k>"],
+        "commands": ["workbench.action.navigateUp"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -506,6 +522,22 @@
     {
         "before": ["L"],
         "after": ["$"]
+    },
+    {
+        "before": ["<C-h>"],
+        "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+        "before": ["<C-l>"],
+        "commands": ["workbench.action.navigateRight"]
+    },
+    {
+        "before": ["<C-j>"],
+        "commands": ["workbench.action.navigateDown"]
+    },
+    {
+        "before": ["<C-k>"],
+        "commands": ["workbench.action.navigateUp"]
     }
   ],
   "vim.normalModeKeyBindings": [
