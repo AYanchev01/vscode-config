@@ -43,4 +43,28 @@
         "command": "extension.vim_escape",
         "when": "editorTextFocus && vim.active && !inDebugRepl"
     },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        // Special case: when in first editor group (pane), go to sidebar
+        // if visible.
+        "key": "ctrl+h",
+        "command": "workbench.explorer.fileView.focus",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        // Special case: when in file explorer, go right (back to 1st open
+        // editor group)
+        "key": "ctrl+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "filesExplorerFocus"
+    },
 ]

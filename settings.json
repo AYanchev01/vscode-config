@@ -269,22 +269,6 @@
         "before": ["L"],
         "after": ["$"]
     },
-    {
-        "before": ["<C-h>"],
-        "commands": ["workbench.action.navigateLeft"]
-    },
-    {
-        "before": ["<C-l>"],
-        "commands": ["workbench.action.navigateRight"]
-    },
-    {
-        "before": ["<C-j>"],
-        "commands": ["workbench.action.navigateDown"]
-    },
-    {
-        "before": ["<C-k>"],
-        "commands": ["workbench.action.navigateUp"]
-    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -523,22 +507,6 @@
         "before": ["L"],
         "after": ["$"]
     },
-    {
-        "before": ["<C-h>"],
-        "commands": ["workbench.action.navigateLeft"]
-    },
-    {
-        "before": ["<C-l>"],
-        "commands": ["workbench.action.navigateRight"]
-    },
-    {
-        "before": ["<C-j>"],
-        "commands": ["workbench.action.navigateDown"]
-    },
-    {
-        "before": ["<C-k>"],
-        "commands": ["workbench.action.navigateUp"]
-    }
   ],
   "vim.normalModeKeyBindings": [
     {
