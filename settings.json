@@ -15,6 +15,11 @@
     "editor.formatOnType": true
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.minimap.enabled": false,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility":"compact",
+  "workbench.editor.showTabs": false,
+  "window.title": " ",
   "editor.tokenColorCustomizations": {
 
     "comments": "#ffffff4d",
