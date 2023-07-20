@@ -22,18 +22,19 @@
   "window.title": " ",
   "breadcrumbs.enabled": false,
   "editor.tokenColorCustomizations": {
-
-    "comments": "#ffffff4d",
-    "textMateRules": [
-        {
-            "scope": [
-                "variable.parameter"
-            ],
-            "settings": {
-                "foreground": "#ffc5fc"
-            }
-        },
-    ],
+      "[Default Dark Modern]": {
+          "comments": "#ffffff4d",
+          "textMateRules": [
+              {
+                  "scope": [
+                      "variable.parameter"
+                  ],
+                  "settings": {
+                      "foreground": "#ffc5fc"
+                  }
+              }
+          ]
+      }
   },
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
