@@ -45,6 +45,11 @@
     },
     {
         "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
@@ -54,6 +59,12 @@
         "key": "ctrl+h",
         "command": "workbench.explorer.fileView.focus",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
+    },
+    {
+        // Special case: when in file explorer ,go to last editor group
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "filesExplorerFocus"
     },
     {
         "key": "ctrl+l",
@@ -68,11 +79,17 @@
         "when": "filesExplorerFocus"
     },
     {
+        // Special case: when in last editor group, go to file explorer
+        "key": "ctrl+l",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && explorerViewletVisible"
+    },
+    {
         "key": "ctrl+shift+h",
         "command": "workbench.action.decreaseViewSize"
     },
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.increaseViewSize"
-    }
+    },
 ]
