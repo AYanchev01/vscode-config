@@ -61,10 +61,10 @@
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
     },
     {
-        // Special case: when in file explorer ,go to last editor group
+        // Special case: when in file explorer or first pane if explorer is not visible,go to last editor group
         "key": "ctrl+h",
         "command": "workbench.action.focusLastEditorGroup",
-        "when": "filesExplorerFocus"
+        "when": "(filesExplorerFocus && explorerViewletVisible) || (activeEditorGroupIndex == 1 && !explorerViewletVisible)"
     },
     {
         "key": "ctrl+l",
@@ -83,6 +83,12 @@
         "key": "ctrl+l",
         "command": "workbench.files.action.focusFilesExplorer",
         "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && explorerViewletVisible"
+    },
+    {
+        // Special case: when in last editor group, go to first if file explorer is not visible
+        "key": "ctrl+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !explorerViewletVisible"
     },
     {
         "key": "ctrl+shift+h",
