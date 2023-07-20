@@ -20,6 +20,7 @@
   "window.menuBarVisibility":"compact",
   "workbench.editor.showTabs": false,
   "window.title": " ",
+  "breadcrumbs.enabled": false,
   "editor.tokenColorCustomizations": {
 
     "comments": "#ffffff4d",

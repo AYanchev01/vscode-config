@@ -67,4 +67,12 @@
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "filesExplorerFocus"
     },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.increaseViewSize"
+    }
 ]
