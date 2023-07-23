@@ -38,6 +38,7 @@
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+// ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction",
@@ -49,17 +50,16 @@
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
-        // Special case: when in first editor group (pane), go to sidebar
-        // if visible.
+        // Special case: when in first editor group (pane), go to sidebar if visible 
         "key": "ctrl+h",
-        "command": "workbench.explorer.fileView.focus",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && explorerViewletVisible"
+        "command": "workbench.action.focusSideBar",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && sideBarVisible"
     },
     {
-        // Special case: when in file explorer or first pane if explorer is not visible,go to last editor group
+        // Special case: when in side bar or first pane if sidebar is not visible,go to last editor group
         "key": "ctrl+h",
         "command": "workbench.action.focusLastEditorGroup",
-        "when": "(filesExplorerFocus && explorerViewletVisible) || (activeEditorGroupIndex == 1 && !explorerViewletVisible)"
+        "when": "sideBarFocus || (!sideBarVisible && !sideBarFocus && activeEditorGroupIndex == 1)" 
     },
     {
         "key": "ctrl+l",
@@ -67,23 +67,22 @@
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
-        // Special case: when in file explorer, go right (back to 1st open
-        // editor group)
+        // Special case: when in sidebar, go right (back to 1st open editor group)
         "key": "ctrl+l",
         "command": "workbench.action.focusFirstEditorGroup",
-        "when": "filesExplorerFocus"
+        "when": "sideBarFocus"
     },
     {
-        // Special case: when in last editor group, go to file explorer
+        // Special case: when in last editor group, go to sidebar
         "key": "ctrl+l",
-        "command": "workbench.files.action.focusFilesExplorer",
-        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && explorerViewletVisible"
+        "command": "workbench.action.focusSideBar",
+        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && sideBarVisible"
     },
     {
-        // Special case: when in last editor group, go to first if file explorer is not visible
+        // Special case: when in last editor group, go to first if sidebar is not visible
         "key": "ctrl+l",
         "command": "workbench.action.focusFirstEditorGroup",
-        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !explorerViewletVisible"
+        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !sideBarVisible"
     },
     {
         "key": "ctrl+shift+h",
@@ -93,4 +92,5 @@
         "key": "ctrl+shift+l",
         "command": "workbench.action.increaseViewSize"
     },
+// ---------------------------------------------------------------------------------------------------------------------------------
 ]
