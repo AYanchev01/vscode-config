@@ -42,7 +42,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.fontWeight": 550, 
+  "editor.fontWeight": 400, 
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
@@ -561,7 +561,7 @@
         "w"
       ],
       "commands": [
-        "workbench.action.files.save",
+        "workbench.action.files.saveAll",
       ]
     },
     {
