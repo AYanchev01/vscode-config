@@ -19,6 +19,9 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility":"compact",
   "workbench.editor.showTabs": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
   "window.title": " ",
   "breadcrumbs.enabled": false,
   "editor.tokenColorCustomizations": {
@@ -248,6 +251,24 @@
       ],
       "commands": [
         "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x",
+      ],
+      "commands": [
+        "workbench.view.extensions"
       ]
     },
     {
@@ -486,6 +507,24 @@
       ],
       "commands": [
         "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x",
+      ],
+      "commands": [
+        "workbench.view.extensions"
       ]
     },
     {
