@@ -24,6 +24,13 @@
   "workbench.statusBar.visible": false,
   "window.title": " ",
   "breadcrumbs.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "editorIndentGuide.background": "#00000000",
+      "editorIndentGuide.activeBackground": "#4b4b4b",
+      "editorLineNumber.foreground": "#474747",
+    },
+  },
   "editor.tokenColorCustomizations": {
       "[Default Dark Modern]": {
           "comments": "#ffffff4d",
@@ -42,7 +49,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.fontWeight": 400, 
+  "editor.fontWeight": 450, 
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",

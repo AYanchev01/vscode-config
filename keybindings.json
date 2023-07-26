@@ -35,6 +35,11 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
     {
+        "key": "f",
+        "command": "filesExplorer.findInFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
