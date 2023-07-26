@@ -304,6 +304,15 @@
         "before": ["L"],
         "after": ["$"]
     },
+    {
+        "before": ["<leader>", "o"],
+        "commands": [
+            {
+              "command": "C_Cpp.SwitchHeaderSource",
+              "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+            }
+        ]
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -559,6 +568,15 @@
     {
         "before": ["L"],
         "after": ["$"]
+    },
+    {
+        "before": ["<leader>", "o"],
+        "commands": [
+            {
+              "command": "C_Cpp.SwitchHeaderSource",
+              "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+            }
+        ]
     },
   ],
   "vim.normalModeKeyBindings": [
