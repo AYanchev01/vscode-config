@@ -606,6 +606,16 @@
       ]
     },
   ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+        "before": ["H"],
+        "after": ["^"]
+    },
+    {
+        "before": ["L"],
+        "after": ["$"]
+    },
+  ],
   "vim.useSystemClipboard": true,
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
