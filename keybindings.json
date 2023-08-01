@@ -43,6 +43,11 @@
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+    {
+        "key": "tab",
+        "command": "search.action.focusSearchList",
+        "when": "sideBarFocus && hasSearchResult && activeViewlet == 'workbench.view.search'"
+    }, 
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
         "key": "ctrl+h",
