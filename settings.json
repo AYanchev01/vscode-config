@@ -110,7 +110,7 @@
       "before": [
         "<leader>",
         "f",
-        "z"
+        "a"
       ],
       "commands": [
         "workbench.action.findInFiles"
@@ -146,26 +146,6 @@
     //     "z"
     //   ]
     // },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "w"
-      ],
-      "commands": [
-        "actions.find"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "z"
-      ],
-      "commands": [
-        "workbench.action.findInFiles"
-      ]
-    },
     {
       "before": [
         "<leader>",
@@ -313,6 +293,10 @@
             }
         ]
     },
+    {
+        "before": ["m"],
+        "after": ["%"]
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -391,7 +375,7 @@
       "before": [
         "<leader>",
         "f",
-        "z"
+        "a"
       ],
       "commands": [
         "workbench.action.findInFiles"
@@ -578,6 +562,10 @@
             }
         ]
     },
+    {
+        "before": ["m"],
+        "after": ["%"]
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
@@ -614,6 +602,10 @@
     {
         "before": ["L"],
         "after": ["$"]
+    },
+    {
+        "before": ["m"],
+        "after": ["%"]
     },
   ],
   "vim.useSystemClipboard": true,
