@@ -69,7 +69,7 @@
         // Special case: when in side bar or first pane if sidebar is not visible,go to last editor group
         "key": "ctrl+h",
         "command": "workbench.action.focusLastEditorGroup",
-        "when": "sideBarFocus || (!sideBarVisible && !sideBarFocus && activeEditorGroupIndex == 1)" 
+        "when": "sideBarFocus || (!sideBarVisible && !sideBarFocus && activeEditorGroupIndex == 1 && vim.mode != 'Insert')" 
     },
     {
         "key": "ctrl+l",

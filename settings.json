@@ -22,6 +22,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
   "window.title": " ",
   "breadcrumbs.enabled": false,
   "workbench.colorCustomizations": {
@@ -126,26 +127,26 @@
         "actions.find"
       ]
     },
-    // {
-    //   "before": [
-    //     "ctrl+d"
-    //   ],
-    //   "after": [
-    //     "ctrl+d",
-    //     "z",
-    //     "z"
-    //   ]
-    // },
-    // {
-    //   "before": [
-    //     "ctrl+u"
-    //   ],
-    //   "after": [
-    //     "ctrl+u",
-    //     "z",
-    //     "z"
-    //   ]
-    // },
+    {
+      "before": [
+        "ctrl+d"
+      ],
+      "after": [
+        "ctrl+d",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "ctrl+u"
+      ],
+      "after": [
+        "ctrl+u",
+        "z",
+        "z"
+      ]
+    },
     {
       "before": [
         "<leader>",
@@ -297,6 +298,13 @@
         "before": ["m"],
         "after": ["%"]
     },
+    {
+        "before": [":"],
+        "commands": [
+            "workbench.action.showCommands",
+        ],
+        "silent": true
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -341,26 +349,26 @@
         "X"
       ]
     },
-    // {
-    //   "before": [
-    //     "ctrl+d"
-    //   ],
-    //   "after": [
-    //     "ctrl+d",
-    //     "z",
-    //     "z"
-    //   ]
-    // },
-    // {
-    //   "before": [
-    //     "ctrl+u"
-    //   ],
-    //   "after": [
-    //     "ctrl+u",
-    //     "z",
-    //     "z"
-    //   ]
-    // },
+    {
+      "before": [
+        "ctrl+d"
+      ],
+      "after": [
+        "ctrl+d",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "ctrl+u"
+      ],
+      "after": [
+        "ctrl+u",
+        "z",
+        "z"
+      ]
+    },
     {
       "before": [
         "<leader>",
@@ -566,6 +574,13 @@
         "before": ["m"],
         "after": ["%"]
     },
+    {
+        "before": [":"],
+        "commands": [
+            "workbench.action.showCommands",
+        ],
+        "silent": true
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
@@ -607,6 +622,16 @@
         "before": ["m"],
         "after": ["%"]
     },
+  ],
+  "vim.insertModeKeyBindings": [
+      {
+          "before": ["<C-h>"],
+          "after": ["<left>"]
+      },
+      {
+          "before": ["<C-l>"],
+          "after": ["<right>"]
+      }
   ],
   "vim.useSystemClipboard": true,
   "terminal.integrated.fontFamily": "monospace",
