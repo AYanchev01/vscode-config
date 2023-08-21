@@ -27,8 +27,8 @@
   "breadcrumbs.enabled": false,
   "workbench.colorCustomizations": {
     "[Default Dark Modern]": {
-      "editorIndentGuide.background": "#00000000",
-      "editorIndentGuide.activeBackground": "#4b4b4b",
+      "editorIndentGuide.background1": "#00000000",
+      "editorIndentGuide.activeBackground1": "#4b4b4b",
       "editorLineNumber.foreground": "#474747",
     },
   },
@@ -305,6 +305,10 @@
         ],
         "silent": true
     },
+    {
+        "before": ["<leader>", "C"],
+        "commands": ["workbench.action.closeOtherEditors"]
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -580,6 +584,10 @@
             "workbench.action.showCommands",
         ],
         "silent": true
+    },
+    {
+        "before": ["<leader>", "C"],
+        "commands": ["workbench.action.closeOtherEditors"]
     },
   ],
   "vim.normalModeKeyBindings": [
