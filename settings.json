@@ -262,15 +262,6 @@
     {
       "before": [
         "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
         "s"
       ],
       "commands": [
@@ -537,15 +528,6 @@
       ],
       "commands": [
         "workbench.view.extensions"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
       ]
     },
     {
