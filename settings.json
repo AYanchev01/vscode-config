@@ -111,7 +111,7 @@
       "before": [
         "<leader>",
         "f",
-        "a"
+        "p"
       ],
       "commands": [
         "workbench.action.findInFiles"
@@ -262,15 +262,6 @@
     {
       "before": [
         "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
         "s"
       ],
       "commands": [
@@ -387,7 +378,7 @@
       "before": [
         "<leader>",
         "f",
-        "a"
+        "p"
       ],
       "commands": [
         "workbench.action.findInFiles"
@@ -537,15 +528,6 @@
       ],
       "commands": [
         "workbench.view.extensions"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
       ]
     },
     {

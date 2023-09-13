@@ -48,6 +48,26 @@
         "command": "search.action.focusSearchList",
         "when": "sideBarFocus && hasSearchResult && activeViewlet == 'workbench.view.search'"
     }, 
+    {
+        "key": "/",
+        "command": "actions.find",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "enter",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+n",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
         "key": "ctrl+h",
@@ -103,4 +123,9 @@
         "command": "workbench.action.increaseViewSize"
     },
 // ---------------------------------------------------------------------------------------------------------------------------------
+    {
+        "key": "enter",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
 ]
