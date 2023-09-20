@@ -1,5 +1,19 @@
 [
     {
+        "command": "runCommands",
+        "key": "ctrl+g ctrl+l",
+        "args": {
+            "commands": [
+                "gitlens.copyMessageToClipboard",
+                {
+                    "command": "workbench.action.tasks.runTask",
+                    "args": "openChangeIdUrl"
+                }
+            ]
+        },
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
         "key": "a",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
