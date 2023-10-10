@@ -51,6 +51,9 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
+  "[cpp]": {
+      "editor.formatOnSave": true
+  },
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
@@ -239,6 +242,16 @@
       ],
       "commands": [
         "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
       ]
     },
     {
@@ -510,6 +523,16 @@
       ],
       "commands": [
         "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
       ]
     },
     {
