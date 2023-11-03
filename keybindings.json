@@ -49,24 +49,14 @@
         "when": "sideBarFocus && hasSearchResult && activeViewlet == 'workbench.view.search'"
     }, 
     {
-        "key": "/",
-        "command": "actions.find",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-    },
-    {
         "key": "enter",
         "command": "closeFindWidget",
         "when": "editorFocus && findWidgetVisible"
     },
     {
-        "key": "n",
-        "command": "editor.action.nextMatchFindAction",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "shift+n",
-        "command": "editor.action.previousMatchFindAction",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "key": "escape",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
     },
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {

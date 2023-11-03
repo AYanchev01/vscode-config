@@ -51,9 +51,6 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
-  "[cpp]": {
-      "editor.formatOnSave": true
-  },
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
@@ -312,6 +309,27 @@
     {
         "before": ["<leader>", "C"],
         "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["n"],
+      "commands": ["editor.action.nextMatchFindAction"],
+    },
+    {
+      "before": ["shift+n"],
+      "commands": ["editor.action.previousMatchFindAction"],
+    },
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
     },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -593,6 +611,27 @@
     {
         "before": ["<leader>", "C"],
         "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["n"],
+      "commands": ["editor.action.nextMatchFindAction"],
+    },
+    {
+      "before": ["shift+n"],
+      "commands": ["editor.action.previousMatchFindAction"],
+    },
+    {
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
     },
   ],
   "vim.normalModeKeyBindings": [
