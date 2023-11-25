@@ -51,6 +51,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
+  "editor.wordWrap": "on",
   // configs for vim extension
   // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
@@ -686,6 +687,7 @@
       }
   ],
   "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
