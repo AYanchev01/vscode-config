@@ -634,6 +634,25 @@
         "editor.action.commentLine"
       ]
     },
+    {
+        "before": ["<leader>", "r", "n"],
+        "commands": [
+            {
+                "command": "toggle",
+                "args": {
+                    "id": "line-numbers",
+                    "value": [
+                        {
+                            "editor.lineNumbers": "relative"
+                        },
+                        {
+                            "editor.lineNumbers": "on"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
