@@ -675,6 +675,17 @@
         "git.revertSelectedRanges"
       ]
     },
+    {
+        "before" : [
+            "<leader>",
+            "g",
+            "c",
+            "p"
+        ],
+        "commands": [
+          "github.copilot.toggleCopilot"
+        ]
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
