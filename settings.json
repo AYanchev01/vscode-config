@@ -602,7 +602,7 @@
     },
     {
         "before": ["m"],
-        "after": ["%"]
+        "commands": ["editor.action.jumpToBracket"]
     },
     {
         "before": [":"],
@@ -725,7 +725,7 @@
     },
     {
         "before": ["m"],
-        "after": ["%"]
+        "commands": ["editor.action.jumpToBracket"]
     },
   ],
   "vim.insertModeKeyBindings": [
