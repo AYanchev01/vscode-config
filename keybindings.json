@@ -81,11 +81,6 @@
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
         "key": "ctrl+h",
-        "command": "-editor.action.startFindReplaceAction",
-        "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
@@ -100,6 +95,12 @@
         "key": "ctrl+h",
         "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || (!sideBarVisible && !sideBarFocus && activeEditorGroupIndex == 1 && vim.mode != 'Insert')" 
+    },
+    {
+        // Special case: when in terminal, go to sidebar if visible
+        "key": "ctrl+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "terminalFocus && sideBarVisible && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+l",
@@ -126,13 +127,58 @@
     },
     {
         "key": "ctrl+shift+h",
-        "command": "workbench.action.decreaseViewSize"
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+l",
-        "command": "workbench.action.increaseViewSize"
+        "command": "workbench.action.increaseViewWidth",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
-// ---------------------------------------------------------------------------------------------------------------------------------
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.increaseViewSize",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "(editorTextFocus || sideBarFocus) && terminal.active && terminalIsOpen && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminal.active && terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminal.active && terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus && terminal.active && terminalIsOpen && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.increaseViewHeight",
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.decreaseViewHeight",
+    },
+// -------------------------------------------------REMOVED KEYBINDINGS---------------------------------------------------------------------
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
     {
         "key": "enter",
         "command": "-editor.action.nextMatchFindAction",
@@ -152,5 +198,23 @@
         "key": "alt+[",
         "command": "-editor.action.inlineSuggest.showPrevious",
         "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "inSearchEditor || searchViewletFocus"
     },
 ]

@@ -1,59 +1,5 @@
 {
-  "code-runner.runInTerminal": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "cmake.configureOnOpen": true,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.inlayHints.enabled": "offUnlessPressed",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "editor.inlineSuggest.enabled": true,
-  "remote.SSH.defaultExtensions": [
-    "gitpod.gitpod-remote-ssh"
-  ],
-  "redhat.telemetry.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "editor.minimap.enabled": false,
-  "window.titleBarStyle": "custom",
-  "window.menuBarVisibility":"compact",
-  "workbench.editor.showTabs": "none",
-  "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
-  "window.commandCenter": false,
-  "window.title": " ",
-  "breadcrumbs.enabled": false,
-  "workbench.colorCustomizations": {
-    "[Default Dark Modern]": {
-      "editorIndentGuide.background1": "#00000000",
-      "editorIndentGuide.activeBackground1": "#4b4b4b",
-      "editorLineNumber.foreground": "#474747",
-    },
-  },
-  "editor.tokenColorCustomizations": {
-      "[Default Dark Modern]": {
-          "comments": "#ffffff4d",
-          "textMateRules": [
-              {
-                  "scope": [
-                      "variable.parameter"
-                  ],
-                  "settings": {
-                      "foreground": "#ffc5fc"
-                  }
-              }
-          ]
-      }
-  },
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": true,
-  "editor.fontWeight": 450, 
-  "editor.wordWrap": "on",
   // configs for vim extension
-  // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-b>": false,
@@ -743,4 +689,61 @@
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "terminal.integrated.commandsToSkipShell": [
+      "workbench.action.focusSideBar",
+  ],
+  "code-runner.runInTerminal": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cmake.configureOnOpen": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.inlineSuggest.enabled": true,
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "redhat.telemetry.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.minimap.enabled": false,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility":"compact",
+  "workbench.editor.showTabs": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "window.title": " ",
+  "breadcrumbs.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "editorIndentGuide.background1": "#00000000",
+      "editorIndentGuide.activeBackground1": "#4b4b4b",
+      "editorLineNumber.foreground": "#474747",
+    },
+  },
+  "editor.tokenColorCustomizations": {
+      "[Default Dark Modern]": {
+          "comments": "#ffffff4d",
+          "textMateRules": [
+              {
+                  "scope": [
+                      "variable.parameter"
+                  ],
+                  "settings": {
+                      "foreground": "#ffc5fc"
+                  }
+              }
+          ]
+      }
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 450, 
+  "editor.wordWrap": "on",
 }
