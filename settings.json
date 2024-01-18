@@ -622,6 +622,26 @@
       ]
     },
     {
+      "before": [
+        "<leader>",
+        "g",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.editor.nextChange"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "N"
+      ],
+      "commands": [
+        "workbench.action.editor.previousChange"
+      ]
+    },
+    {
         "before" : [
             "<leader>",
             "g",
