@@ -7,224 +7,42 @@
   },
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [ ">" ],
+      "commands": [ "editor.action.indentLines" ]
     },
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": [ "<" ],
+      "commands": [ "editor.action.outdentLines" ]
     },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "d"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": [ "d" ],
+      "after": [ "\"", "_", "d" ]
     },
     {
-      "before": [
-        "D"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "D"
-      ]
+      "before": [ "D" ],
+      "after": [ "\"", "_", "D" ]
     },
     {
-      "before": [
-        "<BS>"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "X"
-      ]
+      "before": [ "<BS>" ],
+      "after": [ "\"", "_", "X" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.findInFiles"
-      ]
+      "before": [ "<leader>", "f", "p" ],
+      "commands": [ "workbench.action.findInFiles" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "w"
-      ],
-      "commands": [
-        "actions.find"
-      ]
+      "before": [ "<leader>", "f", "w" ],
+      "commands": [ "actions.find" ]
     },
     {
-      "before": [
-        "ctrl+d"
-      ],
-      "after": [
-        "ctrl+d",
-        "z",
-        "z"
-      ]
+      "before": [ "ctrl+d" ],
+      "after": [ "ctrl+d", "z", "z" ]
     },
     {
-      "before": [
-        "ctrl+u"
-      ],
-      "after": [
-        "ctrl+u",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "]",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
-    },
-    {
-      "before": [
-        "[",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "commands": [
-        "editor.action.goToDeclaration"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "R"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "z",
-        "c"
-      ],
-      "commands": [
-        "editor.fold"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "z",
-        "o"
-      ],
-      "commands": [
-        "editor.unfold"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.showAllEditors"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "d"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "g",
-        "d"
-      ],
-      "commands": [
-        "workbench.view.scm"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "x",
-      ],
-      "commands": [
-        "workbench.view.extensions"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": [ "ctrl+u" ],
+      "after": [ "ctrl+u", "z", "z" ]
     },
     {
         "before": ["H"],
@@ -235,28 +53,8 @@
         "after": ["$"]
     },
     {
-        "before": ["<leader>", "o"],
-        "commands": [
-            {
-              "command": "C_Cpp.SwitchHeaderSource",
-              "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
-            }
-        ]
-    },
-    {
         "before": ["m"],
         "after": ["%"]
-    },
-    {
-        "before": [":"],
-        "commands": [
-            "workbench.action.showCommands",
-        ],
-        "silent": true
-    },
-    {
-        "before": ["<leader>", "C"],
-        "commands": ["workbench.action.closeOtherEditors"]
     },
     {
       "before": ["/"],
@@ -271,263 +69,128 @@
       "commands": ["editor.action.previousMatchFindAction"],
     },
     {
-      "before": [
-        "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
+      "before": [ "<leader>", "/" ],
+      "commands": [ "editor.action.commentLine" ]
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    { 
+      "before": [ "<leader>", "w" ],
+      "commands": [ "workbench.action.files.saveAll", ]
+    },
+    {
+      "before": [ ">" ],
+      "commands": [ "editor.action.indentLines" ]
+    },
+    {
+      "before": [ "<" ],
+      "commands": [ "editor.action.outdentLines" ]
     },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "d"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d"
-      ]
+      "before": [ "d" ],
+      "after": [ "\"", "_", "d" ]
     },
     {
-      "before": [
-        "D"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "D"
-      ]
+      "before": [ "D" ],
+      "after": [ "\"", "_", "D" ]
     },
     {
-      "before": [
-        "d",
-        "d"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "d",
-        "d"
-      ]
+      "before": [ "d", "d" ],
+      "after": [ "\"", "_", "d", "d" ]
     },
     {
-      "before": [
-        "<BS>"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "X"
-      ]
+      "before": [ "<BS>" ],
+      "after": [ "\"", "_", "X" ]
     },
     {
-      "before": [
-        "ctrl+d"
-      ],
-      "after": [
-        "ctrl+d",
-        "z",
-        "z"
-      ]
+      "before": [ "ctrl+d" ],
+      "after": [ "ctrl+d", "z", "z" ]
     },
     {
-      "before": [
-        "ctrl+u"
-      ],
-      "after": [
-        "ctrl+u",
-        "z",
-        "z"
-      ]
+      "before": [ "ctrl+u" ],
+      "after": [ "ctrl+u", "z", "z" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "w"
-      ],
-      "commands": [
-        "actions.find"
-      ]
+      "before": [ "<leader>", "f", "w" ],
+      "commands": [ "actions.find" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.findInFiles"
-      ]
+      "before": [ "<leader>", "f", "p" ],
+      "commands": [ "workbench.action.findInFiles" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": [ "<leader>", "f", "f" ],
+      "commands": [ "workbench.action.quickOpen" ]
     },
     {
-      "before": [
-        "]",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
+      "before": [ "]", "b" ],
+      "commands": [ "workbench.action.nextEditor" ]
     },
     {
-      "before": [
-        "[",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
+      "before": [ "[", "b" ],
+      "commands": [ "workbench.action.previousEditor" ]
     },
     {
-      "before": [
-        "<leader>",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.splitEditorRight"
-      ]
+      "before": [ "<leader>", "v" ],
+      "commands": [ "workbench.action.splitEditorRight" ]
     },
     {
-      "before": [
-        "<leader>",
-        "c"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": [ "<leader>", "c" ],
+      "commands": [ "workbench.action.closeActiveEditor" ]
     },
     {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "commands": [
-        "editor.action.goToDeclaration"
-      ]
+      "before": [ "<leader>", "d" ],
+      "commands": [ "editor.action.goToDeclaration" ]
     },
     {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": [ "<leader>", "i" ],
+      "commands": [ "editor.action.goToImplementation" ]
     },
     {
-      "before": [
-        "<leader>",
-        "R"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+      "before": [ "<leader>", "R" ],
+      "commands": [ "editor.action.rename" ]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
+      "before": [ "<leader>", "e" ],
+      "commands": [ "workbench.view.explorer" ]
     },
     {
-      "before": [
-        "<leader>",
-        "z",
-        "c"
-      ],
-      "commands": [
-        "editor.fold"
-      ]
+      "before": [ "<leader>", "z", "c" ],
+      "commands": [ "editor.fold" ]
     },
     {
-      "before": [
-        "<leader>",
-        "z",
-        "o"
-      ],
-      "commands": [
-        "editor.unfold"
-      ]
+      "before": [ "<leader>", "z", "o" ],
+      "commands": [ "editor.unfold" ]
     },
     {
-      "before": [
-        "j"
-      ],
-      "commands": [
-        "cursorDown"
-      ]
+      "before": [ "j" ],
+      "commands": [ "cursorDown" ]
     },
     {
-      "before": [
-        "k"
-      ],
-      "commands": [
-        "cursorUp"
-      ]
+      "before": [ "k" ],
+      "commands": [ "cursorUp" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.showAllEditors"
-      ]
+      "before": [ "<leader>", "f", "b" ],
+      "commands": [ "workbench.action.showAllEditors" ]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "d"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": [ "<leader>", "f", "d" ],
+      "commands": [ "editor.action.formatDocument" ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "d"
-      ],
-      "commands": [
-        "workbench.view.scm"
-      ]
+      "before": [ "<leader>", "g", "d" ],
+      "commands": [ "workbench.view.scm" ]
     },
     {
-      "before": [
-        "<leader>",
-        "x",
-      ],
-      "commands": [
-        "workbench.view.extensions"
-      ]
+      "before": [ "<leader>", "x", ],
+      "commands": [ "workbench.view.extensions" ]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": [ "<leader>", "s" ],
+      "commands": [ "workbench.action.toggleSidebarVisibility" ]
     },
     {
         "before": ["H"],
@@ -552,9 +215,7 @@
     },
     {
         "before": [":"],
-        "commands": [
-            "workbench.action.showCommands",
-        ],
+        "commands": [ "workbench.action.showCommands", ],
         "silent": true
     },
     {
@@ -574,13 +235,8 @@
       "commands": ["editor.action.previousMatchFindAction"],
     },
     {
-      "before": [
-        "<leader>",
-        "/"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
+      "before": [ "<leader>", "/" ],
+      "commands": [ "editor.action.commentLine" ]
     },
     {
         "before": ["<leader>", "r", "n"],
@@ -602,82 +258,24 @@
         ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "p"
-      ],
-      "commands": [
-        "editor.action.dirtydiff.next"
-      ]
+      "before": [ "<leader>", "g", "p" ],
+      "commands": [ "editor.action.dirtydiff.next" ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "r"
-      ],
-      "commands": [
-        "git.revertSelectedRanges"
-      ]
+      "before": [ "<leader>", "g", "r" ],
+      "commands": [ "git.revertSelectedRanges" ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.editor.nextChange"
-      ]
+      "before": [ "<leader>", "g", "n" ],
+      "commands": [ "workbench.action.editor.nextChange" ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "N"
-      ],
-      "commands": [
-        "workbench.action.editor.previousChange"
-      ]
+      "before": [ "<leader>", "g", "N" ],
+      "commands": [ "workbench.action.editor.previousChange" ]
     },
     {
-        "before" : [
-            "<leader>",
-            "g",
-            "c",
-            "p"
-        ],
-        "commands": [
-          "github.copilot.toggleCopilot"
-        ]
-    },
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "<leader>",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.saveAll",
-      ]
-    },
-    {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
-    },
-    {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+        "before" : [ "<leader>", "g", "c", "p" ],
+        "commands": [ "github.copilot.toggleCopilot" ]
     },
   ],
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
