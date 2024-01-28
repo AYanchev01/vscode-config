@@ -49,6 +49,11 @@
         "when": "sideBarFocus && hasSearchResult && activeViewlet == 'workbench.view.search'"
     }, 
     {
+        "key": "tab",
+        "command": "list.focusLast",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    }, 
+    {
         "key": "enter",
         "command": "closeFindWidget",
         "when": "editorFocus && findWidgetVisible"
