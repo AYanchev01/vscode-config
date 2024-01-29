@@ -210,6 +210,14 @@
         ]
     },
     {
+        "before": ["<leader>", "m"],
+        "after": ["m"]
+    },
+    {
+        "before": ["<leader>", "s", "m"],
+        "commands": [":marks"]
+    },
+    {
         "before": ["m"],
         "commands": ["editor.action.jumpToBracket"]
     },
@@ -365,4 +373,5 @@
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
   "editor.wordWrap": "on",
+  "vim.showMarksInGutter": true,
 }
