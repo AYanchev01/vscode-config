@@ -222,11 +222,6 @@
         "commands": ["editor.action.jumpToBracket"]
     },
     {
-        "before": [":"],
-        "commands": [ "workbench.action.showCommands", ],
-        "silent": true
-    },
-    {
         "before": ["<leader>", "C"],
         "commands": ["workbench.action.closeOtherEditors"]
     },
@@ -341,7 +336,6 @@
   "window.density.editorTabHeight": "compact",
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
   "window.commandCenter": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "window.title": " ",
