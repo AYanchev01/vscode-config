@@ -368,4 +368,6 @@
   "editor.fontWeight": 450, 
   "editor.wordWrap": "on",
   "vim.showMarksInGutter": true,
+  "workbench.list.defaultFindMatchType": "fuzzy",
+  "workbench.list.defaultFindMode": "filter",
 }

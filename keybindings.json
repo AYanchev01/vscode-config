@@ -40,6 +40,11 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
     {
+    "key": "/",
+    "command": "list.find",
+    "when": "listFocus && listSupportsFind"
+    },
+    {
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
     },
