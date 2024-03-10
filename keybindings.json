@@ -40,9 +40,9 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
     {
-    "key": "/",
-    "command": "list.find",
-    "when": "listFocus && listSupportsFind"
+        "key": "/",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
     },
     {
         "key": "ctrl+t",
@@ -105,12 +105,6 @@
         "key": "ctrl+h",
         "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || (!sideBarVisible && !sideBarFocus && activeEditorGroupIndex == 1 && vim.mode != 'Insert')" 
-    },
-    {
-        // Special case: when in terminal, go to sidebar if visible
-        "key": "ctrl+h",
-        "command": "workbench.action.focusSideBar",
-        "when": "terminalFocus && sideBarVisible && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+l",
@@ -183,6 +177,37 @@
         "key": "ctrl+shift+k",
         "command": "workbench.action.decreaseViewHeight",
     },
+    // Split terminal navigation
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
 // -------------------------------------------------REMOVED KEYBINDINGS---------------------------------------------------------------------
     {
         "key": "ctrl+h",
@@ -226,5 +251,9 @@
         "key": "ctrl+shift+j",
         "command": "-workbench.action.search.toggleQueryDetails",
         "when": "inSearchEditor || searchViewletFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
     },
 ]
