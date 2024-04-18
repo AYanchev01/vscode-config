@@ -327,6 +327,10 @@
   ],
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
+  "vim.showMarksInGutter": true,
+  "vim.enableNeovim": true,
+  "vim.neovimUseConfigFile": true,
+  "vim.neovimConfigPath": "${env:NEOVIM_CONFIG}",
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
@@ -338,7 +342,7 @@
   "cmake.configureOnOpen": true,
   "editor.bracketPairColorization.enabled": false,
   "editor.inlayHints.enabled": "offUnlessPressed",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "editor.inlineSuggest.enabled": true,
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
@@ -387,7 +391,6 @@
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
   "editor.wordWrap": "on",
-  "vim.showMarksInGutter": true,
   "workbench.list.defaultFindMatchType": "fuzzy",
   "workbench.list.defaultFindMode": "filter",
 }
