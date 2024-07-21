@@ -129,15 +129,17 @@
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !sideBarVisible"
     },
+    // Pane resizing
+    // When in last editor group, reverse the resize direction. (mimics smart-splits.nvim)
     {
         "key": "ctrl+shift+h",
         "command": "workbench.action.decreaseViewWidth",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
-        "key": "ctrl+shift+l",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.increaseViewWidth",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+h",
@@ -146,9 +148,20 @@
     },
     {
         "key": "ctrl+shift+l",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+l",
         "command": "workbench.action.increaseViewSize",
         "when": "sideBarFocus"
     },
+    // Up/down navigation only works with terminal window
     {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.focus",
