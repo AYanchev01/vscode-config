@@ -88,6 +88,16 @@
         "command": "editor.action.inlineSuggest.showPrevious",
         "when": "inlineSuggestionVisible && !editorReadonly"
     },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    },
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
         "key": "ctrl+h",

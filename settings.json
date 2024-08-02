@@ -258,6 +258,10 @@
       "commands": ["editor.action.previousMatchFindAction"],
     },
     {
+      "before": ["?"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
       "before": [ "<leader>", "/" ],
       "commands": [ "editor.action.commentLine" ]
     },
