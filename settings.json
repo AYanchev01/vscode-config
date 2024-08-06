@@ -80,6 +80,10 @@
       "before": [ "<leader>", "/" ],
       "commands": [ "editor.action.commentLine" ]
     },
+    {
+      "before": ["?"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
   ],
   "vim.normalModeKeyBindings": [
     { 
@@ -161,14 +165,6 @@
       "commands": [ "workbench.action.closeActiveEditor" ]
     },
     {
-      "before": [ "<leader>", "d" ],
-      "commands": [ "editor.action.goToDeclaration" ]
-    },
-    {
-      "before": [ "<leader>", "i" ],
-      "commands": [ "editor.action.goToImplementation" ]
-    },
-    {
       "before": [ "<leader>", "R" ],
       "commands": [ "editor.action.rename" ]
     },
@@ -234,8 +230,12 @@
         "after": ["m"]
     },
     {
-        "before": ["<leader>", "s", "m"],
+        "before": ["<leader>", "m", "s"],
         "commands": [":marks"]
+    },
+    {
+        "before": ["<leader>", "m", "d"],
+        "commands": [":delmarks!"]
     },
     {
         "before": ["m"],
