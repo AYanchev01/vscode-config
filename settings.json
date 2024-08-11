@@ -82,7 +82,10 @@
     },
     {
       "before": ["?"],
-      "commands": ["editor.action.startFindReplaceAction"]
+      "commands": [
+          "actions.find",
+          "editor.action.startFindReplaceAction"
+      ]
     },
   ],
   "vim.normalModeKeyBindings": [
@@ -258,7 +261,10 @@
     },
     {
       "before": ["?"],
-      "commands": ["editor.action.startFindReplaceAction"]
+      "commands": [
+            "actions.find",
+            "editor.action.startFindReplaceAction"
+      ]
     },
     {
       "before": [ "<leader>", "/" ],
