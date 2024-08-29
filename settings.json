@@ -199,7 +199,7 @@
       "commands": [ "editor.action.formatDocument" ]
     },
     {
-      "before": [ "<leader>", "g", "d" ],
+      "before": [ "<leader>", "g", "v" ],
       "commands": [ "workbench.view.scm" ]
     },
     {
@@ -288,6 +288,10 @@
                 }
             }
         ]
+    },
+    {
+      "before": [ "<leader>", "g", "d" ],
+      "commands": [ "git.openChange" ],
     },
     {
       "before": [ "<leader>", "g", "p" ],
