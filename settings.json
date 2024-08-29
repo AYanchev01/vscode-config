@@ -1,10 +1,6 @@
 {
   // configs for vim extension
   "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-b>": false,
-    "<C-f>": false,
-  },
   "vim.visualModeKeyBindings": [
     {
       "before": [ ">" ],
