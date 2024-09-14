@@ -200,6 +200,26 @@
         "key": "ctrl+shift+k",
         "command": "workbench.action.decreaseViewHeight",
     },
+    {
+        "key": "ctrl+shift+left",
+        "command": "workbench.action.moveActiveEditorGroupLeft",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "workbench.action.moveActiveEditorGroupRight",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.moveActiveEditorGroupUp",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.moveActiveEditorGroupDown",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
     // Split terminal navigation
     {
         "key": "ctrl+\\",
