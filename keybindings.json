@@ -91,12 +91,18 @@
     {
         "key": "ctrl+enter",
         "command": "editor.action.replaceOne",
-        "when": "editorFocus && findWidgetVisible"
+        "when": "replaceInputFocussed"
     },
     {
-        "key": "ctrl+shift+enter",
-        "command": "editor.action.replaceAll",
-        "when": "editorFocus && findWidgetVisible"
+        "command": "runCommands",
+        "key": "enter",
+        "args": {
+            "commands": [
+                "editor.action.replaceAll",
+                "closeFindWidget"
+            ]
+        },
+        "when": "replaceInputFocussed"
     },
 // ----------------------------------------- SPLIT SCREEN NAVIGATION ---------------------------------------------------------------
     {
