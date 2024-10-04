@@ -108,13 +108,13 @@
     {
         "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "!sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         // Special case: when in first editor group (pane), go to sidebar if visible 
         "key": "ctrl+h",
         "command": "workbench.action.focusSideBar",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && sideBarVisible"
+        "when": "!sideBarFocus && vim.active && vim.mode != 'Insert' && activeEditorGroupIndex == 1 && sideBarVisible"
     },
     {
         // Special case: when in side bar or first pane if sidebar is not visible,go to last editor group
@@ -125,7 +125,7 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.focusRightGroup",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "!sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         // Special case: when in sidebar, go right (back to 1st open editor group)
@@ -137,25 +137,25 @@
         // Special case: when in last editor group, go to sidebar
         "key": "ctrl+l",
         "command": "workbench.action.focusSideBar",
-        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && sideBarVisible"
+        "when": "!sideBarFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && sideBarVisible"
     },
     {
         // Special case: when in last editor group, go to first if sidebar is not visible
         "key": "ctrl+l",
         "command": "workbench.action.focusFirstEditorGroup",
-        "when": "editorTextFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !sideBarVisible"
+        "when": "!sideBarFocus && activeEditorGroupLast && vim.active && vim.mode != 'Insert' && !sideBarVisible"
     },
     // Pane resizing
     // When in last editor group, reverse the resize direction. (mimics smart-splits.nvim)
     {
         "key": "ctrl+shift+h",
         "command": "workbench.action.decreaseViewWidth",
-        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && !sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+h",
         "command": "workbench.action.increaseViewWidth",
-        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && !sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+h",
@@ -165,12 +165,12 @@
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.increaseViewWidth",
-        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "(!multipleEditorGroups || (multipleEditorGroups && !activeEditorGroupLast)) && !sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.decreaseViewWidth",
-        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "((multipleEditorGroups && activeEditorGroupLast) || (!multipleEditorGroups && sideBarVisible)) && !sideBarFocus && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+l",
@@ -196,7 +196,7 @@
     {
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus && terminal.active && terminalIsOpen && vim.active && vim.mode != 'Insert'"
+        "when": "(editorTextFocus || sideBarFocus) && terminal.active && terminalIsOpen && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+j",
