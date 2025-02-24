@@ -340,6 +340,7 @@
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "${env:NEOVIM_CONFIG}",
+  "vim.langmap": "ЯВЕРТЪУИОПШЩАСДФГХЙКЛЗЬЦЖБНМ;QWERTYUIOP{}ASDFGHJKLZXCVBNM,явертъуиопшщасдфгхйклзьцжбнм;qwertyuiop[]asdfghjklzxcvbnm",
   "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
