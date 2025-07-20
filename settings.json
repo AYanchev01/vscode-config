@@ -199,8 +199,13 @@
       "commands": [ "workbench.view.scm" ]
     },
     {
-      "before": [ "<leader>", "x", ],
+      "before": [ "<leader>", "x"],
       "commands": [ "workbench.view.extensions" ]
+    },
+    {
+      "before": [ "<leader>", "d"],
+      "commands": [ "workbench.view.debug" ],
+      "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
       "before": [ "<leader>", "s" ],
@@ -218,10 +223,19 @@
         "before": ["<leader>", "o"],
         "commands": [
             {
-              "command": "C_Cpp.SwitchHeaderSource",
+              "command": "clangd.switchheadersource",
               "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
             }
         ]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "commands": [
+        {
+          "command": "clangd.inlayHints.toggle",
+          "when": "clangd.inlayHints.supported"
+        }
+      ]
     },
     {
         "before": ["<leader>", "m"],
@@ -341,8 +355,8 @@
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "${env:NEOVIM_CONFIG}",
   // "vim.langmap": "ЯВЕРТЪУИОПШЩАСДФГХЙКЛЗЬЦЖБНМ;QWERTYUIOP{}ASDFGHJKLZXCVBNM,явертъуиопшщасдфгхйклзьцжбнм;qwertyuiop[]asdfghjklzxcvbnm",
-  "terminal.integrated.fontFamily": "monospace",
   "C_Cpp.configurationWarnings": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
   "terminal.integrated.commandsToSkipShell": [
       "workbench.action.focusSideBar",
@@ -396,11 +410,33 @@
           ]
       }
   },
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontWeight": 450, 
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontLigatures.enabled": true,
   "editor.wordWrap": "on",
   "workbench.list.defaultFindMatchType": "fuzzy",
   "workbench.list.defaultFindMode": "filter",
+  "cmake.options.statusBarVisibility": "compact",
+  "cmake.options.advanced": {
+    "build": { "statusBarVisibility": "visible", },
+    "launch": { "statusBarVisibility": "visible", },
+    "debug": { "statusBarVisibility": "visible", },
+    "launchTarget": { "statusBarVisibility": "visible", },
+    "ctest": { "statusBarVisibility": "visible", },
+    "kit": { "statusBarVisibility": "hidden", },
+    "cpack": { "statusBarVisibility": "hidden", },
+    "workflow": { "statusBarVisibility": "hidden", },
+    "workflowPreset": { "statusBarVisibility": "hidden", },
+    "buildPreset": { "statusBarVisibility": "hidden", },
+    "variant": { "statusBarVisibility": "hidden", },
+    "testPreset": { "statusBarVisibility": "hidden", },
+    "packagePreset": { "statusBarVisibility": "hidden", },
+    "buildTarget": { "statusBarVisibility": "hidden", },
+  },
+  "debug.showInStatusBar": "never",
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
 }
